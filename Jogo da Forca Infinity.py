@@ -1,6 +1,6 @@
 import random
 
-palavras = ["infinity"]
+palavras = ["logica infinity"]
 
 palavra = random.choice(palavras)
 
@@ -18,8 +18,7 @@ print("Bem vindo", nome, "ao jogo da forca")
 print("Seu objetivo é tentar acertar a palavra secreta")
 print("Você terá que tentar uma letra por vez")
 print("Caso você acerte, a letra será colocada na palavra para que você chegue mais perto de acertar")
-print("Caso você erre, você percerá uma chance, você tem no máximo",
-      chances, "tentativas")
+print("Caso você erre, você percerá uma chance, você tem no máximo", chances, "tentativas")
 print("-------------------------------------------------------------------------------------------")
 
 while tentativas < chances and ''.join(estado_atual) != palavra:
@@ -59,8 +58,8 @@ if tentativas == chances:
     print("\n\nVocê perdeu")
     print("Acabaram suas tentativas")
 else:
-    print(nome, "\n\nVocê ganhou, parabéns\n")
+    print(nome, "Você ganhou, parabéns\n")
 
-print("------------------------------------------------------------------------------")
+print("--------------------------------------------------------------")
 print("------------------A palavra era", palavra, "------------------")
-print("------------------------------------------------------------------------------")
+print("--------------------------------------------------------------")
